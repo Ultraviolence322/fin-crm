@@ -21,6 +21,7 @@
 import HomeBill from "@/components/HomeBill";
 import HomeCurrency from "@/components/HomeCurrency";
 import localeFilter from "@/filters/locale.filter";
+import firebase from "firebase/app";
 
 export default {
   name: "home",
@@ -56,6 +57,7 @@ export default {
   async mounted() {
     this.currency = await this.$store.dispatch("fetchCurrency");
     this.currency.rates["RUB"] = 1;
+    console.log(firebase.auth().currentUser);
   },
 };
 </script>

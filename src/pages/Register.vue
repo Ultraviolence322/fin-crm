@@ -135,7 +135,7 @@ export default {
       };
       try {
         await this.$store.dispatch("register", formData);
-        this.$router.push("/");
+        this.$message("Accept Email");
       } catch (e) {
         console.log(e);
       }
