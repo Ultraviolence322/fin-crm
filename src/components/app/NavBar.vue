@@ -8,7 +8,7 @@
         <span class="black-text">{{data | date('datatime')}}</span>
       </div>
 
-      <ul class="right hide-on-small-and-down">
+      <ul class="right">
         <li>
           <a ref="dropdown" class="dropdown-trigger black-text" href="#" data-target="dropdown">
             {{name}}

@@ -15,7 +15,10 @@
       <div class="history-chart">
         <PieChart :chartdata="chartdata" :options="chartoptions" />
       </div>
-      <HistoryTable :records="items" />
+      <div class="history-table">
+<HistoryTable :records="items" />
+      </div>
+      
 
       <Paginate
         v-model="page"
@@ -112,5 +115,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.history-table {
+   overflow: scroll;
+ }
 </style>

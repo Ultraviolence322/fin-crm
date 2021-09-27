@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      isOpenSideBar: true,
+      isOpenSideBar: false,
       loading: true,
     };
   },

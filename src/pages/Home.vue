@@ -8,7 +8,7 @@
       </button>
     </div>
 
-    <div v-if="!loading" class="row">
+    <div v-if="!loading" class="home row">
       <HomeBill :rates="this.currency.rates" />
       <HomeCurrency :rates="this.currency.rates" :date="this.currency.date" />
     </div>
@@ -62,5 +62,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  @media (max-width: 890px) { 
+    .home {
+        display: flex;
+        flex-direction: column;
+      }
+   }
 </style>
